@@ -79,3 +79,20 @@ func DeleteCardOperation(id int) error {
 
 	return nil
 }
+
+func PrintCardOperation(id int) error {
+	card, err := GetCardOperation(id)
+
+	if err != nil {
+		return err
+	}
+
+	fmt.Println(card.Name)
+	fmt.Println(card.Attribute)
+	fmt.Println(card.Type)
+	fmt.Println(card.Level)
+	fmt.Println(card.Attack)
+	fmt.Println(card.Defense)
+
+	return nil
+}
