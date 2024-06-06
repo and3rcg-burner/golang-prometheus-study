@@ -19,6 +19,8 @@ func main() {
 
 	app := fiber.New(fiberConfig)
 
+	log.Println("xok")
+
 	log.Println("Connecting to database...")
 	internal.StartDB()
 
